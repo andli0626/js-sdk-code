@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>第4章 4.2节-实例：从手机相册中选照片然后分享</title>
+    <!--依赖文件：jQuery-->
+    <script src="./js/jquery-1.11.2.min.js"></script>
+    <!--依赖文件：微信的JSSDK源文件-->
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <!--依赖文件：coolie-->
+    <script src="./js/cookie.js"></script>
+    <!--JSSDK的环境-->
+    <script src="./js/wxJSSDK.js"></script>
+    <!--引入检测API的图像服务-->
+    <script src="imageSharing.js"></script>
+    <style>
+        input{
+            width: 100%;
+            padding: 0.2em;
+            background-color: #5eb95e;
+            font-size: 1.4em;
+            background-image: linear-gradient(to bottom, #62c462, #57a957);
+            background-repeat: repeat-x;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+            border-radius: 0.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 8em">:)</h1>
+    <b style="font-size: 2em">实例：从手机相册中选照片然后分享，支持选择1张图片！</b><br /><br />
+    <p id="imageContainer" style="text-align: center;width: 100%"></p>
+    <p id="selectImg" style="color: #5eb95e;text-align: center">没有自定义分享图片</p>
+    <input type="button" value="请选择分享图片" id="chooseImage" /><br /><br />
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我在2015“中国好屌”挑战赛，不服来撕（战）</title>
+    <meta name="description" content="我在2015“中国好屌”挑战赛，不服来撕（战）"/>
+	<meta name="viewport" content="initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="../css/loading.css">
+	<link rel="stylesheet" href="../css/game.css">
+	<link rel="stylesheet" href="../css/m_reset.css">
+    <script type="text/javascript">
+        //检测是否在主页过来
+        if(localStorage.getItem("main") != "1"){
+            window.location.href = "../index.html";
+        }
+        if(window.location.href.indexOf("from") != -1){
+            window.location.href = "../index.html";
+        }
+        localStorage.removeItem("main");
+    </script>
+	<script src="../js/jq.js"></script>
+    <script src="../js/touch.min.js"></script>
+    <!--依赖文件：微信的JSSDK源文件-->
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="../js/cookie.js"></script>
+    <!--JSSDK的环境-->
+    <script src="../js/wxJSSDK.js"></script>
+    <script src="../js/boy.js?sdf=234"></script>
+</head>
+<body>
+<div style="display: none"><img src="../images/diao-share.png"></div>
+	<div id="caseVerteClaire">
+		<div id="transform">
+			<div id="transform1"></div>
+			<div id="transform2"></div>
+			<div id="transform3"></div>
+		</div>
+		<div id="load">
+			<p>loading...</p>
+		</div>
+	</div>
+	<div class="wrap">
+		<!-- 蒙版页-->
+		<div class="mask mask1">
+			<div class="mask_center">
+				<img src="../images/girl_text.png" class="girl_text">
+				<ul class="fix" style="position: relative;top:0.5em">
+					<li>诚实参赛。如下图所示，握住手机：</li>
+					<li>1）手指握好，不许乱动；</li>
+					<li>2）用拇指按住左下红色球；</li>
+					<li>3）向上滑动，直到无法继续；</li>
+					<li>4）抬起拇指，释放红色球；</li>
+					<li>5）好屌结果，随即揭晓；</li>
+				</ul>
+				<div class="shou" style="position: relative;top:1em">
+					<img src="../images/boy-gif.gif" class="shou_img">
+				</div>	
+
+			</div>
+			<div class="divs div2 fix" style="position: relative;top:2em">
+				<a href="javascript:void(0);" class="begin_girl_btn w">立刻开始</a>
+			</div>
+		</div>
+		<!-- 游戏页-->
+		<div class="game_con" style="background-image: url('../images/girl_bg.jpg');background-size: 100% 100%;">
+			<!-- 浮动层 -->
+			<img src="../images/kedu.png" class="img_posi kedu">
+			<img src="../images/feng.png" class="img_posi feng">
+			<img src="../images/wu.png" class="img_posi wu">
+		</div>
+        <img src="../images/shan.png" class="img_posi shan" style="bottom: -220px">
+        <div class="yuan1 img_posi" style="-webkit-transition: all 0s linear;left:3em"></div>
+		<!-- 结果页 -->
+		<div class="mask mask2 aniname_top" style="background: rgba(0,0,0,0);padding-left: 16%;">
+			<div class="mask_centers" style="top: 1em;position: relative;">
+				<img src="../images/xian.png" class="xian">
+				<img src="../images/result_tit1.png" class="result_tit">
+				<p id="showResultDes" style="color: #000000;padding: 0px 5px 10px 0.3em;">我在2015“中国好屌”挑战赛，打败了全国90%的华人！不服来战！</p>
+				<div class="shous fix" style="top:1em;position: relative;padding-bottom: 20px;">
+					<a href="javascript:void(0);" class="a1">分享炫耀</a>
+					<a href="../index.html" class="background_btn">回到首页</a>
+				</div>	
+				<a href="javascript:void(0);" style="position: relative;top:1.4em;" class="moshi">高级模式</a>
+				
+
+			</div>
+		</div>
+		<!-- 分享页 -->
+		<div class="mask mask3 aniname_top">
+			<img src="../images/share_mask.png" class="share_mask">
+		</div>
+		<!-- 活动最页 -->
+		<div class="mask mask4 aniname_top">
+			<img src="../images/a.png" class="a_mask">
+			<a href="javascript:void(0);" class="download">
+				点击去下载
+			</a>
+			<img src="../images/gou.png" class="gou" style="top: 1em;position: relative">
+			<img src="../images/close.png" class="close" style="top: 2em;position: relative">
+		</div>
+	</div>
+
+</body>
+</html>

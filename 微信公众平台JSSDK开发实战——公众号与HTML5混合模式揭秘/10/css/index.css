@@ -1,0 +1,197 @@
+﻿@charset 'utf-8';
+/* CSS reset */
+html{color:#000;background:#FFF;font-family:'Microsoft YaHei',Arial, Helvetica, sans-serif;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,a,input,button,textarea,p,blockquote,th,td,strong{padding:0;margin:0;font-family:'Microsoft YaHei',Arial, Helvetica, sans-serif;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+a{}/*此处待添加默认链接颜色*/
+var,em,strong{font-style:normal;}
+address,caption,cite,code,dfn,em,strong,th,var, optgroup{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+legend{color:#000;}
+input,button,textarea,select,optgroup,option{font-family:inherit; font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+body{-webkit-user-select:none;-webkit-text-size-adjust:none;-webkit-transform-style:preserve-3d;}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+/*** clear style ***/
+.fix{*zoom:1;}
+.fix:after{
+	display:block;
+	content:"clear"; 
+	height:0; clear:both;
+	overflow:hidden;
+	visibility:hidden;
+}
+
+html,
+body,
+.wrap{
+	width: 100%;
+    height: 100%;
+	overflow: hidden;
+    min-height: 540px;
+}
+.wrap_page{
+    widows: 100%;
+    height: 100%;
+}
+.wrap{
+	position: relative;
+}
+.index_bg{
+	width: 100%;
+    display: block;
+}
+.wrap_con{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    left: 0;
+    top: 4.5%;
+    text-align: center;
+}
+.img_posi{
+	-webkit-transition:all 0.5s linear;
+	-webkit-transform: translate(0px,0px); 
+}
+.index_text1{
+	width: 84%;
+}
+.index_text2{
+	width: 83.5%;
+}
+.index_text3{
+	width: 100%;
+}
+.index_text4{
+	width: 83.5%;
+}
+.btns{
+	width: 100%;
+}
+.btns{
+    width: 100%;
+    text-align: center;
+}
+.girl_btn,
+.boy_btn{
+	width: 40.8%;
+}
+.girl_btn{
+	margin-right: 0.3rem;
+
+}
+.diao,
+.daoyu{
+    position: absolute;
+}
+.diao{
+	width: 28.4%;
+	top: 0;
+	left: 12.8%;
+}
+.daoyu{
+	width: 51.9%;
+	top: 26.16%;
+	right: 4%;
+}
+.border_bottom{
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    z-index: 2;
+}
+.index_bg1{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+}
+.index_bg_img{
+    width: 100%;
+}
+
+.aniname_left{
+	-webkit-transition:all 0.5s linear;
+	-webkit-transform: translate(-150%,0); 
+}
+.aniname_right{
+	-webkit-transition:all 0.5s linear;
+	-webkit-transform: translate(150%,0); 
+}
+/*** 吹起圆形样式 ***/
+.pie { 
+    width:200px;
+    height:200px;
+    background-color:blue; 
+    border-radius:100px; 
+    position:absolute;
+}
+.pie1 { 
+    clip:rect(0px,200px,200px,100px);
+    -o-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    background:-moz-radial-gradient(20% 50% 0deg, #333, #0000ff); 
+    background:-webkit-gradient(radial, 100 100, 0, 100 100, 110, from(#000), to(#0000ff)); 
+}
+.pie2 { 
+    clip:rect(0px,100px,200px,0px); 
+    -o-transform:rotate(0deg); 
+    -moz-transform:rotate(0deg); 
+    -webkit-transform:rotate(0deg);
+    background:-moz-radial-gradient(80% 50% 0deg, #333, #0000ff);
+    background:-webkit-gradient(radial, 100 100, 0, 100 100, 110, from(#000), to(#0000ff)); 
+ }
+.hold { 
+    width:200px; 
+    height:200px;
+    position:absolute; 
+    z-index:1; 
+ }
+.hold1 { 
+    clip:rect(0px,200px,200px,100px);
+}
+.hold2 { 
+    clip:rect(0px,100px,200px,0px); 
+}
+.bg { 
+    width:200px; 
+    height:200px; 
+    background-color:red;
+    border-radius:100px;
+    position:absolute;
+    box-shadow:0px 0px 8px #333;
+    background:-moz-radial-gradient(0% 50% 0deg, #900, #ff0000); 
+    background:-webkit-gradient(radial, 100 100, 0, 100 100, 110, from(#900), to(#ff0000)); 
+    }
+.time { 
+    width:160px;
+    height:160px; 
+    margin:20px 0 0 20px;
+    background-color:#fff; 
+    border-radius:100px; 
+    position:absolute; z-index:1; 
+    box-shadow:0px 0px 8px #333 inset; 
+    text-align:center; line-height:160px; 
+    font-family:"Book Antiqua", Palatino, serif; 
+    font-size:35px; font-weight:bold; text-shadow: 1px 1px 3px #333; 
+}
+.time em { 
+    background:#fff; 
+    position:absolute; 
+    top:62px; left:12px; 
+    height:18px;
+    width:140px; 
+    opacity:0.4; 
+}

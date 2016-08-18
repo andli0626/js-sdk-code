@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我在2015“中国好屌”挑战赛，不服来撕（战）</title>
+    <meta name="description" content="我我在2015“中国好屌”挑战赛，不服来撕（战）"/>
+	<meta name="viewport" content="initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="../css/loading.css?v=2">
+	<link rel="stylesheet" href="../css/game.css?v=2">
+	<link rel="stylesheet" href="../css/m_reset.css">
+	<script src="../js/jq.js"></script>
+    <script src="../js/touch.min.js"></script>
+    <!--依赖文件：微信的JSSDK源文件-->
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="../js/cookie.js"></script>
+    <!--JSSDK的环境-->
+    <script src="../js/wxJSSDK.js"></script>
+    <script src="../js/girl.js?v=1"></script>
+</head>
+<body>
+<div style="display: none"><img src="../images/diao-share.png"></div>
+	<div id="caseVerteClaire">
+		<div id="transform">
+			<div id="transform1"></div>
+			<div id="transform2"></div>
+			<div id="transform3"></div>
+		</div>
+		<div id="load">
+			<p>loading...</p>
+		</div>
+	</div>
+	<div class="wrap">
+			<!-- 游戏页-->
+		<div class="girl_con game_con">
+		
+			<!-- 浮动层 -->
+			<img src="../images/kedu1.png" class="img_posi kedu">
+			<div class="center_page center_page1">
+				<div class="game_centers">
+					<div class="div2">
+						<div  class="yuan1 aniname_opacity"></div>
+					</div>
+					<div class="div2">
+						<img src="../images/fei.png" style="-webkit-transform: scale(1.2,1.2);" class="fei aniname_opacity">
+					</div>
+					<div class="divs div2 fix">
+						<img src="../images/kuai.png" class="kuai aniname_opacity">
+						<img src="../images/tou1.jpg" class="tou1 aniname_opacity">
+					</div>
+					<div class="divs div2 fix">
+						<a href="javascript:void(0);" style="margin-right: 27%;" class="begin_girl_btn aniname_opacity">立刻开始</a>
+					</div>
+
+					<div class=" div2 fix">
+						<img src="../images/re.png" class="re aniname_opacity">
+						<img src="../images/tou2.jpg" class="tou2 aniname_opacity">
+					</div>	
+				</div>
+				
+			</div>
+			<div class="center_page center_page2 aniname_top" style="z-index: 2">
+				<div class="game_centers">
+					<div class="div2">
+                        <div class="yuan1 aniname_opacity startGame"></div>
+					</div>
+                    <!--吹气前介绍-->
+					<div class="div2 qianchui" style="top: 3em;">
+						<img src="../images/shouji.png" class="shouji aniname_opacity">
+					</div>
+					<div class="divs div2 fix qianchui" style="top: 3em;">
+						<img src="../images/tishi.png" class="tishi aniname_opacity">
+					</div>
+					<div class="divs div2 fix qianchui" style="top: 3em;">
+						<img src="../images/girl_text1.png" class="girl_text1 aniname_opacity">
+					</div>
+                    <!--吹气···-->
+                    <div class="div2 div2_1 houchui" style="opacity:0;">
+                        <div class="hold hold1">
+                            <div class="pie pie1"></div>
+                        </div>
+                        <div class="hold hold2">
+                            <div class="pie pie2"></div>
+                        </div>
+                        <div class="bg"></div>
+                        <div class="time">
+							<span class="em">
+								<strong id="timeing">10</strong>
+								<em id="timeingEn">sec</em>
+							</span>
+                        </div>
+
+                    </div>
+                    <div class="divs div2 fix houchui" style="opacity:0;">
+                        <div class="text_rel">持续吹气。吹完后，释放按钮</div>
+                    </div>
+				</div>
+			</div>
+			<div class="center_page center_page4  aniname_top">
+				<img src="../images/con3_shan.jpg" class="img_posi con3_shan">
+			</div>
+			<img src="../images/girl_bg1.jpg" class="img_posi feng" style="z-index: 1">
+			
+		</div>	
+		<!-- 结果页 -->
+		<div style="background: rgba(0,0,0,0)" class="mask mask2_con2 aniname_top">
+			<div class="mask_centers" style="top: 1.2em;position: relative;">
+				<img src="../images/xian.png" class="xian">
+				<img src="../images/result_tit1.png" class="result_tit">
+                <!-- 				<img src="../images/result_text1.png" class="result_text">
+           <!-- 				<h2 id="showResultTitle"></h2>
+                                <h2 id="showResultTitle2"></h2>
+                                <h2 id="showResultTitle3"></h2>-->
+				<p class="p_sel" id="showResultDes"></p>
+				<div class="shous fix">
+					<a href="javascript:void(0);" class="a1">分享炫耀</a>
+					<a href="../index.html" class="background_btn">回到首页</a>
+				</div>	
+				<a href="javascript:void(0);" class="moshi">高级模式</a>
+				
+
+			</div>
+		</div>
+		<!-- 分享页 -->
+		<div class="mask mask3 aniname_top">
+			<img src="../images/share_mask.png" class="share_mask">
+		</div>
+		<!-- 活动最页 -->
+		<div class="mask mask4 aniname_top">
+			<img src="../images/aa.png" class="a_mask">
+			<a href="javascript:void(0);" class="download">
+				点击去下载
+			</a>
+			<img src="../images/gou.png" style="top: 1em;position: relative" class="gou">
+			<img src="../images/close.png" style="top: 2em;position: relative" class="close">
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>第9章 9.2节  微信卡券</title>
+    <!--依赖文件：jQuery-->
+    <script src="./js/jquery-1.11.2.min.js"></script>
+    <!--依赖文件：微信的JSSDK源文件-->
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <!--依赖文件：coolie-->
+    <script src="./js/cookie.js"></script>
+    <!--JSSDK的环境-->
+    <script src="./js/wxJSSDK.js"></script>
+    <!--引入检测API的微信卡券服务-->
+    <script src="weChatCardVouchers.js"></script>
+    <style>
+        input{
+            width: 100%;
+            padding: 0.2em;
+            background-color: #5eb95e;
+            font-size: 1.4em;
+            background-image: linear-gradient(to bottom, #62c462, #57a957);
+            background-repeat: repeat-x;
+            color: #ffffff;
+            text-align: center;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+            border-radius: 0.3em;
+        }
+        #info{
+            border-left: 3px solid #03a9f4;
+            background-color: #5eb95e;
+            color: #ffffff;
+            border-radius: 0.3em;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 8em">:)</h1>
+    <b style="font-size: 3em">微信卡券接口！</b><br /><br />
+    <input type="button" value="批量添加卡券接口" id="addCard" /><br /><br />
+    <input type="button" value="调起适用于门店的卡券列表并获取用户选择列表" id="chooseCard" /><br /><br />
+    <input type="button" value="查看微信卡包中的卡券" id="openCard" /><br /><br />
+</body>
+</html>

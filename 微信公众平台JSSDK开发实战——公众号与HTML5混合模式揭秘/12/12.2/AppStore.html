@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第12章 12.2节</title>
+</head>
+<body>
+<h1 style="font-size: 40px">:)</h1>
+<b style="font-size: 20px">App Store Demo！</b>
+<p style="font-size: 20px" id="conversionUrl"></p>
+<script type="text/javascript">
+    var isWechat = function(){
+                var ua = navigator.userAgent.toLowerCase();//获取浏览器字符
+                if(ua.match(/MicroMessenger/i)=="micromessenger") {//判断是否为微信
+                    return true;
+                } else {
+                    return false;
+                }
+            },
+            conversionUrl = function(url){//根据浏览器类型转换url
+                if(isWechat()){
+                    return "http://mp.weixin.qq.com/mp/redirect?url="+encodeURIComponent(url);//转换为微信内可用的地址
+                }else{
+                    return url;//不转换
+                }
+            },
+            _url = conversionUrl("https://itunes.apple.com/cn/app/wo-ai/id955760733?mt=8");
+    window.onload = function(){//页面载入成功后修改dom
+        document.getElementById("conversionUrl").innerHTML = "转换之后的url："+_url;
+    }
+</script>
+</body>
+</html>
